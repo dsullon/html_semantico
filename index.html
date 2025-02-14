@@ -26,6 +26,7 @@
             </div>
         </header>
 
+        <!--CONTENIDO PRINCIPAL-->
         <main>
             <div>
                 <h1>FULL STACK</h1>
@@ -104,8 +105,75 @@
                 </section><!--Fin de seccion-->
             </div>
             <aside>
+                <div class="enlaces">
+                    <h2>Últimas entradas</h2>
+                    <a href="#">IA para creación de web sites</a>
+                    <a href="#">Transiciones CSS</a>
+                    <a href="#">CSS Moderno</a>
+                </div>
                 
+                <div class="comentario">
+                    <h2>Déjanos un comentario</h2>
+                    <form action="datos.html" method="post">
+                        <div class="campo">
+                            <label>Nombre:</label>
+                            <input
+                                name="nombre"
+                                type="text"
+                                placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="campo">
+                            <label>Comentario:</label>
+                            <textarea
+                                name="comentario"
+                                placeholder="Ingrese su comentario"
+                            ></textarea>
+                        </div>
+                        <button>Enviar</button>
+                        <input type="submit" value="Enviar Submit">
+                    </form>
+                </div>
+                <div class="login">
+                    <h2>Iniciar sesión</h2>
+                    <form method="post">
+                        <div class="campo">
+                            <label>Usuario:</label>
+                            <input 
+                                type="text"
+                                name="Usuario">
+                        </div>
+                        <div class="campo">
+                            <label>Password:</label>
+                            <input 
+                                type="password"
+                                name="contrasena">
+                        </div>
+                        <button>Iniciar sesión</button>
+                    </form>
+                </div>
             </aside>
         </main>
+
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="info">
+                <div class="info__logo">
+                    <img src="https://picsum.photos/id/1029/600/400" alt="Logo">
+                </div>
+                <div class="info__contacto">
+                    <address>
+                        <p>Dirección: <span>Jr. Ica 2020 Lima</span></p>
+                        <p>Email: <span>micorreo@dominio.com</span></p>
+                        <p>Telefono: <span>+51 999888777</span></p>
+                    </address>                    
+                </div>
+                <div class="info__redes">
+                    <!--TODO: Agregar iconos de redes sociales-->
+                </div>
+            </div>
+            <div class="copy">
+                <!--TODO: Agregar info de copy-->
+            </div>
+        </footer>
     </body>
 </html>
