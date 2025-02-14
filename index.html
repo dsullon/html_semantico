@@ -15,7 +15,10 @@
         <header class="header">
             <div class="header__contenido">
                 <div class="header__logo">
-                    <img src="https://picsum.photos/id/743/600/400" alt="Logo de la empresa">
+                    <img 
+                        src="https://picsum.photos/id/743/600/400" 
+                        alt="Logo de la empresa"
+                        height="120px">
                 </div><!--Fin de Logo-->
                 <nav class="navegacion-principal">
                     <a href="#">Inicio</a>
@@ -59,7 +62,10 @@
                             Occaecat fugiat elit officia nostrud. Sit eiusmod sit irure elit nisi sunt qui aliqua et. Proident aliqua minim est consequat occaecat qui ea sint dolor ex incididunt elit irure ut. Amet est ad officia mollit Lorem veniam anim irure velit commodo aliquip nulla Lorem quis. In enim magna veniam culpa consequat dolore laborum dolor voluptate ipsum.
                         </p>
                         <div class="articulo__imagen">
-                            <img src="https://picsum.photos/id/1003/600/400" alt="">
+                            <img 
+                                src="https://picsum.photos/id/1003/600/400"
+                                alt=""
+                                height="200px">
                         </div>
                         <p>
                             Cupidatat esse irure aliqua sint elit aliquip pariatur ad eu amet aliqua deserunt nulla. Magna reprehenderit labore reprehenderit enim reprehenderit nisi. Lorem deserunt veniam minim sit eiusmod. Ea labore eiusmod dolore incididunt adipisicing dolore incididunt anim. Sint mollit aliqua non ex amet dolore eiusmod est ad anim. Nisi commodo officia cupidatat dolore cillum proident adipisicing excepteur voluptate.
@@ -70,7 +76,9 @@
                 <section class="seccion">
                     <h2>Frontend</h2>
                     <div class="seccion__imagen">
-                        <img src="https://picsum.photos/id/237/600/400" alt="Frontend">
+                        <img 
+                            src="https://picsum.photos/id/237/600/400" alt="Frontend"
+                            height="200px">
                     </div>
                     <p>
                         Aliqua consectetur labore pariatur ipsum id voluptate. Anim officia laboris elit elit. Est mollit sunt sit dolore proident duis eu ut sint amet quis culpa. Nulla do aliquip tempor eu pariatur adipisicing anim commodo deserunt ad reprehenderit consectetur labore. Officia do elit qui aute ullamco reprehenderit consequat minim mollit anim magna. Fugiat id exercitation adipisicing officia et aute adipisicing anim aliquip id aliqua aute. Ut voluptate esse magna occaecat ex magna.
@@ -84,7 +92,10 @@
                             Esse aute ullamco cillum velit fugiat aute eiusmod esse. Pariatur quis irure magna exercitation laboris sunt magna dolore cupidatat veniam esse reprehenderit voluptate exercitation. Aliqua nulla magna aliquip culpa nisi exercitation consequat exercitation exercitation esse officia est eu cupidatat. Exercitation officia excepteur minim duis voluptate esse fugiat eiusmod deserunt pariatur id officia. Laborum qui dolor amet occaecat ea. Incididunt consequat ipsum cupidatat tempor minim ex anim. Commodo mollit veniam esse ea fugiat commodo officia aliquip dolore occaecat in officia.
                         </p>
                         <div class="articulo__imagen">
-                            <img src="https://picsum.photos/id/318/600/400" alt="Html">
+                            <img 
+                                src="https://picsum.photos/id/318/600/400" 
+                                alt="Html"
+                                height="200px">
                         </div>
                     </article><!--Fin de article-->
                     <article>
@@ -93,7 +104,10 @@
                             Laborum non amet non magna amet. Sunt ut dolore magna dolore enim irure minim qui eu enim. Nostrud veniam amet irure tempor commodo amet velit esse nulla quis.
                         </p>
                         <div class="articulo__imagen">
-                            <img src="https://picsum.photos/id/1058/600/400" alt="Figma">
+                            <img 
+                                src="https://picsum.photos/id/1058/600/400" 
+                                alt="Figma"
+                                height="200px">
                         </div>
                         <p>
                             In nisi anim in quis mollit nisi sint fugiat nulla occaecat Lorem sint. Mollit est quis consequat in officia dolore. Cupidatat veniam ipsum sunt ut dolore. Culpa cupidatat consectetur excepteur magna.
@@ -152,13 +166,58 @@
                     </form>
                 </div>
             </aside>
+            <section>
+                <h2>Hablamos de tu preferencias</h2>
+                <form method="post" action="datos.html">
+                    <div class="campo">
+                        <label>Perfiles:</label>
+                        <select
+                            name="perfil">
+                            <option value="" selected disabled>--SELECCIONE--</option>
+                            <option value="FE">Frontend</option>
+                            <option value="BE">Backend</option>
+                            <option value="FS">Full Stack</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Tecnología:</label>
+                        <select name="tecnologia">
+                            <option selected disabled>--SELECCIONE--</option>
+                            <optgroup label="Backend">
+                                <option>HTML</option>
+                                <option>CSS</option>
+                                <option>JS</option>
+                            </optgroup>
+                            <optgroup label="Frontend">
+                                <option>C#</option>
+                                <option>Java</option>
+                                <option>Php</option>
+                                <option>Python</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Indicanos una fecha para contactarnos</label>
+                        <input 
+                            type="date" 
+                            name="fecha">
+                        <input 
+                            type="time"
+                            name="hora">
+                    </div>
+                    <button>Enviar</button>
+                </form>
+            </section>
         </main>
 
         <!--FOOTER-->
         <footer class="footer">
             <div class="info">
                 <div class="info__logo">
-                    <img src="https://picsum.photos/id/1029/600/400" alt="Logo">
+                    <img 
+                        src="https://picsum.photos/id/1029/600/400" 
+                        alt="Logo"
+                        height="60px">
                 </div>
                 <div class="info__contacto">
                     <address>
@@ -168,7 +227,30 @@
                     </address>                    
                 </div>
                 <div class="info__redes">
-                    <!--TODO: Agregar iconos de redes sociales-->
+                    <a href="#">
+                        <img 
+                            src="assets/img/facebook.svg" 
+                            alt="Facebook" width="40px">
+                    </a>
+                    <a href="#">
+                        <img 
+                            src="assets/img/instagram.svg"
+                            alt="Instagram"
+                            width="40px"
+                        >
+                    </a>
+                    <a href="#">
+                        <img 
+                            src="assets/img/tiktok.svg"
+                            alt="Titok"
+                            width="40px">
+                    </a>
+                    <a href="#">
+                        <img 
+                            src="assets/img/youtube.svg"
+                            alt="YouTube"
+                            width="40px">
+                    </a>
                 </div>
             </div>
             <div class="copy">
